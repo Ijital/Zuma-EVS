@@ -1,0 +1,63 @@
+body {
+    
+    background: linear-gradient(rgb(7, 52, 29, 0.906), rgba(7, 52, 29, 0.906)), url('../app_assets/img/main-background.jpg'); 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(192, 188, 188);
+}
+
+#main-content {
+ width: 80%;
+ margin: auto;
+ margin-top: 40px;
+ text-align: center;
+}
+
+#heading {
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 20px;
+    margin:10px;
+    font-size: 35px;
+    font-weight: bold !important;
+}
+
+.menu-options{
+    margin-top: 15vh;
+}
+
+.menu-option{
+    height: 200px;
+    background-color: white;
+    padding: 5x !important;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+
+#sub-heading {
+    color: rgb(81 133 66);
+    font-weight: bolder;
+    margin-top: 5px;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgb(37, 37, 37);
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@keyframes windowLoadAnimate {
+    0% {
+        opacity: 0.0;
+    }
+
+    100% {
+        background: linear-gradient(rgb(7, 52, 29), rgba(7, 52, 29, 0.858)), url('../app_assets/img/main-background.jpg'); 
+    }
+}
+

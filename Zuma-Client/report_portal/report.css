@@ -1,0 +1,88 @@
+body {
+    overflow: hidden;
+    padding: 5px;
+    background: linear-gradient(rgba(16, 95, 55, 0.8), rgba(16, 95, 55, 0.8)), url('../app_assets/img/background-img.png');
+}
+
+.table{
+    text-align: center;
+    background-color: white;
+    /* background-image: url('../assets/img/coatarms.png');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    padding-right: 5px !important;
+}
+
+th{
+    font-weight: 400 !important;
+}
+
+td{
+    padding-top: 1.8px !important;
+    padding-bottom: 1.8px !important;
+   
+}
+
+/* .presidential{
+    background-color:rgb(211, 209, 209) !important;
+} */
+
+td img{
+    margin-right: 10px;
+    float: left !important;
+    width: 25px;
+}
+
+.party-accronym{
+    float: left !important; 
+}
+
+#table-body{
+    font-size: 15px;
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white !important;
+    text-align: center;
+}
+
+footer button {
+    margin-bottom: 5px;
+}
+
+
+.modal-dialog{
+    margin-top: 150px;
+}
+
+.modal-content{
+    width: 50%;
+    margin: auto;
+    box-shadow: 6px 6px 6px #11010163;
+    border-radius: 0;
+}
+
+.modal-content input{
+    border-radius: 0;
+    margin-bottom: 30px;
+}
+
+.modal-content button{
+    border-radius: 0;
+    background-color: rgb(7, 52, 29);  
+}
+
+.officials-sign {
+    height: 30px;
+    text-align: left;
+    padding-top: 5px !important;
+}
+
+#sese{
+    transform: scale(1.1, 0.9);
+}

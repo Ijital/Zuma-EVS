@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="../app_assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./login.css" rel="stylesheet">
+    <script src="../app_assets/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <h4 id="heading">INDEPENDENT</h4>
+        <h6 id="sub-heading">National Electoral Commission</h6>
+
+        <div class="modal fade" id="login-modal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+                <div id="login-form-logo">
+                    <img src="../app_assets/img/inec-logo.jpg">
+                </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <input type="text" class="form-control" id="user" placeholder="Username">
+                  </div>
+                  <div class="mb-3">
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                  </div>
+                  <div class="mb-3">
+                    <button type="button" class="btn btn-success" onclick="login()">Login</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <span>Zuma Electronic Voting System<span></br><span>www.ijital.com</span>
+        </footer>
+    </main>
+    <script src="./login.js"></script>
+</body>
+
+</html>

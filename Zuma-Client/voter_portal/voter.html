@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./voter.css">
+    <script src="./voter.js"></script>
+</head>
+<body>
+    <div class="voter container overflow-hidden text-center">
+        <div class="row" >
+            <div class="col-lg-8 offset-lg-2">
+                <div class="row national">
+                    <div class="col" onclick="selectElection('VoteForPresident')">
+                        PRESIDENT
+                    </div>
+                    <div class="col" onclick="selectElection('VoteForSenate')">
+                        SENATOR
+                    </div>
+                    <div class="col" onclick="selectElection('VoteForReps')">
+                        HOUSE OF REPRESENTIVES
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="row state">
+                    <div class="col" onclick="selectElection('VoteForGovernor')">
+                        GOVERNOR
+                    </div>
+                    <div class="col" onclick="selectElection('VoteForAssembly')">
+                        HOUSE OF ASSEMBLY
+                    </div>
+                    <div class="col" onclick="selectElection('VoteForLG')">
+                        LOCAL GOVERNMENT
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <button  class="btn btn-secondary" onclick="window.close()">EXIT</button>
+    </footer>
+</body>
+
+</html>

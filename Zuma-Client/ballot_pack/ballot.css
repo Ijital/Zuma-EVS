@@ -1,0 +1,124 @@
+body {
+    padding: 1px;
+    /* background-color: #f5f1f1; */
+}
+#election-title {
+    margin-bottom: 50px;
+    font-weight: bolder;
+    color: rgb(16, 87, 131);
+    text-shadow: 0 0 2px #415345;
+    text-transform:uppercase
+}
+
+.vote-ballot{
+    border-style:solid;
+    margin: 5px;
+    border-color: rgb(237, 235, 235);
+}
+
+button.btn.party-logo{
+    border: solid !important;
+     border-color: #e4e2e2c1 !important; 
+     border-style: ridge;
+     /* background-color: white; */
+}
+
+.party-logo img {
+    height: 100px;
+    width: 100px;
+}
+
+
+div.col-sm-12.ballot-vote{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+
+.print-ballot-header{
+    color: #0c4f1b;
+    font-size: 5px;
+}
+
+.swal2-confirm:focus{
+    box-shadow: none !important;
+}
+
+.col-sm-2 button{
+   margin-bottom: 15px;
+}
+
+
+.modal-backdrop {
+    opacity: 0.8 !important;
+}
+
+.modal-content {
+    background-color: white;
+}
+
+.modal-header {
+    display: block !important;
+}
+
+
+
+.col:hover {
+    color: rgb(6, 54, 110);
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 90%;
+    color: white !important;
+    text-align: center;
+}
+
+
+#selected-party-logo {
+    height: 150px;
+}
+
+#selected-party {
+    font-weight: bold;
+    color: rgb(101, 17, 17);
+
+}
+
+.swal2-confirm.swal2-styled {
+    background-color: white !important;
+    color: black !important;
+    font-size: 25px;
+   
+}
+
+.swal2-styled{
+    background-color: white !important;
+}
+
+.swal2-confirm img{
+    width: 70px;
+}
+
+.swal2-cancel img{
+    width: 70px;
+}
+
+.swal2-container.swal2-backdrop-show{
+    background: rgba(0,0,0,.8) !important;
+}
+
+.return-btn i {
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+#ballot-fieldset{
+    margin-top: 10px;
+}
+
+#print-ballot-header{
+    color: rgb(16, 104, 16);
+}

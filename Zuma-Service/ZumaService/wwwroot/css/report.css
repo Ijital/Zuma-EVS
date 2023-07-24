@@ -1,0 +1,104 @@
+.navbar {
+    background-color: black;
+    color: white !important;
+    margin-bottom: 15px;
+    height: 40px;
+}
+
+li.nav-item.election {
+    border-right-color: white !important;
+    border-right-style: inset !important;
+    padding-top: 8px;
+}
+
+
+.radio-inline {
+    margin-right: 20px;
+}
+
+#report-filters {
+    padding-left: 35px;
+}
+
+#report-chart {
+    height: 490px !important;
+    width: 600px;
+}
+
+#report {
+    visibility: hidden;
+}
+
+#report-table {
+    visibility: hidden;
+}
+
+#table-body {
+    background-color: #4e4e4e !important;
+    color: white !important;
+}
+
+.results-table {
+    padding-top: 0px !important;
+}
+
+.filter {
+    padding-left: 30px;
+    padding-top: 35px;
+}
+
+span.control-label {
+    margin-right: 15px;
+}
+
+th {
+    color: firebrick !important;
+    font-weight: bolder;
+    padding: 0px !important;
+}
+
+td {
+    padding-bottom: 2px !important;
+    padding-top: 2px !important;
+    line-height: 21px;
+    font-size: small;
+}
+
+
+    td.has-text-centered {
+        width: 60px !important;
+    }
+
+a.navbar-item {
+    color: white !important;
+    border-right: inset;
+    color: white !important;
+}
+
+    a.navbar-item:hover,
+    a.navbar-item:focus {
+        background-color: rgb(61, 94, 71) !important;
+    }
+
+.navbar-item img {
+    height: 40px;
+    max-height: 50px !important;
+}
+
+#election-title {
+    font-size: 20px;
+    text-align: center !important;
+}
+
+
+#spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    visibility: hidden;
+}
+
+.vote-totals {
+    font-weight: bolder !important;
+    color: #fbcbcb;
+}

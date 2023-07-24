@@ -1,0 +1,75 @@
+body {
+    /* background-color: rgb(7, 52, 29); */
+    background: linear-gradient(rgb(7, 52, 29, 0.906), rgba(7, 52, 29, 0.906)), url('../app_assets/img/main-background.jpg');
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(192, 188, 188);
+    opacity: 0.0;
+    animation: windowLoadAnimate 2s forwards;
+}
+
+#heading {
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 20px;
+    margin:10px;
+    font-size: 35px;
+    font-weight: bold !important;
+}
+
+#sub-heading {
+    color: rgb(81 133 66);
+    font-weight: bolder;
+    margin-top: 5px;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgb(37, 37, 37);
+}
+
+.modal-dialog{
+    margin-top: 150px;
+}
+
+.modal-content{
+    width: 50%;
+    margin: auto;
+    box-shadow: 6px 6px 6px #11010163;
+    border-radius: 0;
+}
+
+.modal-content input{
+    border-radius: 0;
+    margin-bottom: 30px;
+}
+
+.modal-content button{
+    border-radius: 0;
+    background-color: rgb(7, 52, 29);
+   
+}
+
+#login-form-logo {
+    text-align: center;
+}
+
+#login-form-logo img {
+    width: 40%;
+}
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@keyframes windowLoadAnimate {
+    0% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}

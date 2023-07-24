@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../app_assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./authentication.css">
+    <script src="../app_assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./authentication.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="screen-sleep" onclick="activateAuthentication()">
+            <h1>2023 GENERAL ELECTIONS</h1>
+            <div id="spin">
+                <div class="square"></div>
+            </div>
+        </div>
+
+        <div id="screen-active">
+            <h1>PLEASE SCAN YOUR PVC</h1>
+            <button onclick="authenthicate()">Authenticate</button>
+
+            <footer class="footer">
+                <button class="btn btn-secondary" onclick="returnToMenu()">MENU</button>
+        
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
