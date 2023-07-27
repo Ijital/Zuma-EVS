@@ -13,7 +13,8 @@ function returnToMenu(){
 
 //Handles event when worker window is loaded
 window.addEventListener("load", e => {
-    database.getAllMinedVotePacks().then(votePacks => {
+    database.getTransmittedVotePacks().then(votePacks => {
+        console.log('GETTING ALL VOTES NOW');
         allVotePacks = votePacks;
         getElectionReport();
         showElectionReport();
@@ -35,7 +36,7 @@ function getAllElectionVotesForParty(party) {
 
 // Gets the vote count for a given party in the given election
 function GetElectionVotes(election, party) {
-    return allVotePacks.filter(vp => vp[election] === party && vp['VotePackStatus'] === 'M').length;
+    return allVotePacks.filter(vp => vp[election] === party && vp['VotePackStatus'] === 'T').length;
 }
 
 function printReport() {

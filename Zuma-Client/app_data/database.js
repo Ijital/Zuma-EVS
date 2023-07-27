@@ -42,9 +42,9 @@ function saveIncident(values) {
 }
 
 // Gets all records from the specified table 
-function getAllMinedVotePacks() {
+function getTransmittedVotePacks() {
     return new Promise((resolve, reject) => {
-        db.all(dbCommands.getAllMinedVotePacks, [], (er, rows) => {
+        db.all(dbCommands.getTransmittedVotePacks, [], (er, rows) => {
             er ? reject(er.message) : resolve(rows);
         });
     });
@@ -69,9 +69,9 @@ function findVotePack(vin) {
 }
 
 // Updates a given record given the record Id
-function updateVotePack(status, vin) {
+function updateVotePackStatus(vin) {
     return new Promise((resolve, reject) => {
-        db.run(dbCommands.updateVotePack, [status, vin], (er) => {
+        db.run(dbCommands.updateVotePackStatus, [vin], (er) => {
             er ? reject(er.message) : resolve(true);
         });
     });
@@ -84,7 +84,7 @@ module.exports.database = {
     saveVotePack: saveVotePack,
     saveIncident: saveIncident,
     findVotePack: findVotePack,
-    updateVotePack: updateVotePack,
+    updateVotePackStatus: updateVotePackStatus,
     getPendingVotePacks: getPendingVotePacks,
-    getAllMinedVotePacks: getAllMinedVotePacks
+    getTransmittedVotePacks: getTransmittedVotePacks
 }

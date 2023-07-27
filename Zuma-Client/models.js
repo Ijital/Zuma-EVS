@@ -18,7 +18,7 @@ function appWindow(template) {
             contextIsolation: false
         }
     });
-   // window.webContents.openDevTools();
+    //window.webContents.openDevTools();
     window.loadFile(template);
     window.once('ready-to-show', e => {
         if (template !== appPages.worker) {

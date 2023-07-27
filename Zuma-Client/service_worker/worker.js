@@ -18,14 +18,14 @@ function transmitPendingVoteBlock(votePacks) {
     let pendingVoteBlock = getVoteBlock(votePacks);
     let promises = network.nodes.map(node => post(node, pendingVoteBlock));
     Promise.all(promises).then(results => {
-        updateVotePacks('M', votePacks);
+        updateVotePacks(votePacks);
     }).catch();
 }
 
 // Updates status of mine processed vote packs
-function updateVotePacks(status, votePacks) {
+function updateVotePacks(votePacks) {
     let votePackVins = votePacks.map(v => v.Vin);
-    let promises = votePackVins.map(vin => database.updateVotePack(status, vin));
+    let promises = votePackVins.map(vin => database.updateVotePackStatus(vin));
     Promise.all(promises).then(results => pendingVotePacks.length = 0);
 }
 
@@ -62,28 +62,28 @@ async function post(node, data) {
 
 //STRESS TEST
 
-let votePackCounter = 0;
+// let votePackCounter = 0;
 
-(function voteTestRun() {   
-    setInterval(() => {
-        if (votePackCounter < 100) {
-            votePackCounter++;
-            var date = new Date();
-            let votePack = {
-                "Vin": `${Math.random() * 10000000000000000}`,
-                "VoterAge": 44,
-                "VoterGender": 'M',
-                "VoterOccupation": "developer",
-                "VoteDate": `${date.toLocaleDateString()}T${date.toLocaleTimeString()}`,
-                "VotePackStatus": 'P',
-                "VoteForPresident": 'APC',
-                "VoteForSenate": 'APC',
-                "VoteForReps": 'APC',
-                "VoteForGovernor": 'APC',
-                "VoteForAssembly": 'APC'
-            };
-            database.saveVotePack(Object.values(votePack));
-        }
+// (function voteTestRun() {   
+//     setInterval(() => {
+//         if (votePackCounter < 100) {
+//             votePackCounter++;
+//             var date = new Date();
+//             let votePack = {
+//                 "Vin": `${Math.random() * 10000000000000000}`,
+//                 "VoterAge": 44,
+//                 "VoterGender": 'M',
+//                 "VoterOccupation": "developer",
+//                 "VoteDate": `${date.toLocaleDateString()}T${date.toLocaleTimeString()}`,
+//                 "VotePackStatus": 'P',
+//                 "VoteForPresident": 'PDP',
+//                 "VoteForSenate": 'PDP',
+//                 "VoteForReps": 'PDP',
+//                 "VoteForGovernor": 'PDP',
+//                 "VoteForAssembly": 'PDP'
+//             };
+//             database.saveVotePack(Object.values(votePack));
+//         }
 
-    }, 100);
-})();
+//     }, 100);
+// })();

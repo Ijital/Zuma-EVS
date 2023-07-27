@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\melvinijih\\Documents\\DEV\\Zuma\\Zuma-Service\\ZumaService\\ZumaService.csproj": {}
+    "C:\\Users\\melvinijih\\Documents\\Zuma-EVS\\Zuma-Service\\ZumaService\\ZumaService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\melvinijih\\Documents\\DEV\\Zuma\\Zuma-Service\\ZumaService\\ZumaService.csproj": {
+    "C:\\Users\\melvinijih\\Documents\\Zuma-EVS\\Zuma-Service\\ZumaService\\ZumaService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\melvinijih\\Documents\\DEV\\Zuma\\Zuma-Service\\ZumaService\\ZumaService.csproj",
+        "projectUniqueName": "C:\\Users\\melvinijih\\Documents\\Zuma-EVS\\Zuma-Service\\ZumaService\\ZumaService.csproj",
         "projectName": "ZumaService",
-        "projectPath": "C:\\Users\\melvinijih\\Documents\\DEV\\Zuma\\Zuma-Service\\ZumaService\\ZumaService.csproj",
+        "projectPath": "C:\\Users\\melvinijih\\Documents\\Zuma-EVS\\Zuma-Service\\ZumaService\\ZumaService.csproj",
         "packagesPath": "C:\\Users\\melvinijih\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\melvinijih\\Documents\\DEV\\Zuma\\Zuma-Service\\ZumaService\\obj\\",
+        "outputPath": "C:\\Users\\melvinijih\\Documents\\Zuma-EVS\\Zuma-Service\\ZumaService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
